@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<head>
+        <title>Register Patient</title>
+        <link rel= "stylesheet" type="text/css" href="layoutregisterpatient.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+  <nav id="menu">
+        
+    <a href="registerpatient.html" id="logo">PATIENT</a>
+    <a class="active" href="logout.php">LOG OUT</a>
+    <a class="active" href="dataregister.php">MY DATA</a>
+ 
+    <div class="subnav">
+      <div class="search-container">
+          <form action="search.php" method="POST">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit" name="keys_submit" ><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+  </div></div>
+    </nav>
+
+      <div class="patient">
+        <table>
+          <tr>
+            <th><p>REGISTER PATIENT</p></th>
+            <form method = "POST" action="includedata3.php">
+          </tr>
+          <tr>
+              <td><label for="name"><b>NAME</b></label>
+              <input type="text" placeholder="NAME SAME IN YOUR IC" id="name" name="name" required></td>
+          </tr>
+          <tr>
+              <td><label for="no_ic"><b>NUMBER IC</b></label>
+              <input type="text" placehoder=" " id="no_ic" name="no_ic" required></td>
+          </tr>
+          <tr>
+            <td><label for="no_ic"><b>AGE</b></label>
+            <input type="text" placehoder=" " id="age" name="age" required></td>
+        </tr>
+          <tr>
+            <td><label for="gender"><b>Gender</b></label></td>
+           </tr>
+           <tr>
+            <td><input type = "radio" name = "gender" value="Female">FEMALE
+	           <input type = "radio" name = "gender" value="Male">MALE</td>	
+          </tr>
+          <tr>
+              <td><label for="no_phone"><b>NUMBER PHONE</b></label>
+              <input type="text" placeholder=" " id="no_phone" name="no_phone" required></td>
+          </tr>
+          <tr>
+              <td><label for="email"><b>EMAIL</b></label>
+              <input type="email" placeholder=" " id="email" name="email" required></td>
+          </tr>
+          <tr>
+            <td><label for="address"><b>ADDRESS</b></label>
+            <textarea rows="4" cols="44" id="address" name="address" placeholder="You Address"></textarea></td>
+        </tr>
+          <tr>
+          <td><label for="hospital"><b>HOSPITAL</b></label>
+              <select id="hospital" name="hospital">
+              <option value="HOSPITAL TENGKU AMPUAN AFZAN">HOSPITAL TENGKU AMPUAN AFZAN
+              <option value="HOSPITAL ALOR GAJAH">HOSPITAL ALOR GAJAH
+              <option value="HOSPITAL AMPANG">HOSPITAL AMPANG</option>
+          </select></td>
+          </tr>
+          <tr>
+              <td><label for="dateappointment"><b>DATE APPOINTMENT</b></label>
+              <input type="date" id="dateappointment" name="dateappointment" required>
+          <tr>
+             <td><label for="timeappointment"><b>TIME APPOINTMENT</b></label>
+                <select id="timeappointment" name="timeappointment">
+                  <option value="am">AM
+                  <option value="pm">PM</option>
+                  </select></td>
+          </tr>
+          </tr>
+          <tr>
+            <td><label for="problem"><b>HOW WE CAN HELP YOU? </b></label>
+            <textarea rows="4" cols="44" id="problem" name="problem" placeholder="Write is something"></textarea></td>
+        </tr>
+        <tr>
+         <td><input class="submit" type="submit" name="submit" id="submit" value="REGISTER" />
+      <input class="reset" type="reset" name="reset" id="reset" value="CLEAR" /></td>
+      </tr>
+        <tr>
+          <td><button type="logout" class="logout"><a href="logout.php">LOG OUT</a></button></td>
+    </tr>
+      </table>
+      </div></form>
+
+
+
+      <script>
+        window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+  document.getElementById("menu").style.padding = "30px 10px";
+  document.getElementById("logo").style.fontSize = "25px";
+  } else {
+  document.getElementById("menu").style.padding = "80px 10px";
+  document.getElementById("logo").style.fontSize = "35px";
+  }
+  }
+  </script>
+
+</body>

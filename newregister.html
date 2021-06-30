@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <title>NEW REGISTER</title>
+    <link rel="stylesheet" href="layoutNEWregister.css">
+</head>
+
+<body>
+    <form method="post" action="includedata.php">
+        <table width="51%" align="center" cellpadding="0" cellspacing="0">
+    <th><p>REGISTER PATIENT</p></th>
+</tr>
+<tr>
+    <td><label for="name"><b>NAME</b></label>
+    <input type="text" placeholder="same in your ic" id="name" name="name" required></td>
+</tr>
+<tr>
+  <td><label for="gender"><b>Gender</b></label></td>
+ </tr>
+ <tr>
+  <td><input type = "radio" id="gender" name = "gender" value="Female">FEMALE
+     <input type = "radio" id="gender" name = "gender" value="Male">MALE</td>	
+</tr>
+<tr>
+    <td><label for="email"><b>EMAIL</b></label>
+    <input type="email" placeholder="XXXXX@gmail.com" id="email" name="email" required></td>
+</tr>
+<tr>
+    <td><label for="username"><b>USERNAME</b></label>
+    <input type="text" placeholder="Username...." id="username" name="username" required></td>
+</tr>
+<tr>
+    <td><label for="password"><b>PASSWORD</b></label>
+    <input type="password" placeholder="Example:abc124" id="password" name="password" required></td>
+    </tr>
+    <td><label>
+      <input class="submit" type="submit" name="register" id="submit" value="REGISTER" />
+      <input class="reset" type="reset" name="reset" id="reset" value="CLEAR" />
+    </label>
+</td>
+</tr>
+<tr>
+    <td><label><a href="logout.php"  class="cancel">CANCEL</a></label></td>
+</tr>
+</body></table></form>
+</html>
